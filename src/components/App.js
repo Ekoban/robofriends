@@ -15,7 +15,6 @@ class App extends Component {
 
 	onSearchChange = (event) => {
 		this.setState({searchfield: event.target.value})
-	
 	}
 
 	render() {
@@ -28,9 +27,8 @@ class App extends Component {
 				<SearchBox searchChange={this.onSearchChange} />
 				<CardList robots = {filteredRobots}/>
 			</div>
-		);	
+		);
 	}
-	
 }
 
 export default App;
